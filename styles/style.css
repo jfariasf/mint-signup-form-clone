@@ -8,13 +8,16 @@
 
 html {
     font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font: 400
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    background: #eceef1;
 }
-
-a {
+ 
+footer a {
     color: #333;
     text-decoration: none;
-  }
+  } 
 
   /* Debug */
 
@@ -25,3 +28,70 @@ a {
 .main-container {
     
 }
+
+/* Navbar section */
+
+.navbar-container {
+    padding: 10px 30px;
+    height: 60px;
+}
+
+.buttom-container{
+    margin-left: 10px
+}
+
+/* Header Logo */
+.logo-container{
+    width: 118px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
+.logo-anchor{
+
+}
+
+/* Padding rules */
+
+.vpadding-20px{
+    padding: 20px 0;
+}
+
+ /* Margin rules */
+
+ .margin-hcenter{
+     margin: 0 auto;
+     
+ }
+
+/* Justify CSS */
+.justify-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.justify-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Elements rules */
+
+.buttom-style{
+    background: #0077C5;
+    border-radius: 4px;
+    border: 1px solid #4c4c4c;
+    color: #ffff;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 1.125em
+}
+
+/* Height values */
+
+.height-34{
+    height: 34px;
+}
+
+/* Padding rules */
+
