@@ -4,6 +4,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 1px solid #000;
+}
+
+* li {
+    list-style-type: none;
 }
 
 html {
@@ -21,9 +26,9 @@ footer a {
 
   /* Debug */
 
-.debug{
+/* .debug{
     border: 1px solid #000;
-}
+} */
 
 .main-container {
     
@@ -34,10 +39,15 @@ footer a {
 .navbar-container {
     padding: 10px 30px;
     height: 60px;
+    display: block;
 }
 
 .buttom-container{
     margin-left: 10px
+}
+
+.responsive-signup-text{
+    display: none;
 }
 
 /* Header Logo */
@@ -51,6 +61,56 @@ footer a {
 
 }
 
+
+
+.logo-mint{
+    background-position-x: -250px;
+    background-position-y: 35px;
+    width: 31px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
+.wordmark-mint{
+    background-position-x: -280px;
+    background-position-y: 35px;
+    width: 40px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
+.logo-quickbooks{
+    background-position-x: -110px;
+    background-position-y: 35px;
+    width: 31px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
+.wordmark-quickbooks{
+    background-position-x: -140px;
+    background-position-y: 35px;
+    width: 106px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
+.logo-turbotax{
+    background-position-x: 0px;
+    background-position-y: 35px;
+    width: 25px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
+.wordmark-turbotax{
+    background-position-x: -25px;
+    background-position-y: 35px;
+    width: 80px;
+    height: 35px;
+    background-image: url("/images/ecosystem_logos_new.png");
+}
+
 /* Padding rules */
 
 .vpadding-20px{
@@ -61,10 +121,33 @@ footer a {
 
  .margin-hcenter{
      margin: 0 auto;
-     
+ }
+
+ .margin-vbottom-15px{
+     margin-bottom: 15px;
+ }
+
+ .margin-vbottom-30px{
+     margin-bottom: 30px;
+ }
+
+ /* Flex rules  */
+
+ .display-flex {
+     display: flex;
+ }
+
+ .display-flex-column {
+     display: flex;
+     flex-direction: column;
  }
 
 /* Justify CSS */
+
+.text-align-center{
+    text-align:center; 
+}
+
 .justify-right{
     display: flex;
     justify-content: flex-end;
@@ -93,5 +176,53 @@ footer a {
     height: 34px;
 }
 
+/* width rules  */
+
+.width-fit-content {
+    width: fit-content;
+}
+
+.width-380px {
+    width: 380px;
+}
+
 /* Padding rules */
 
+.padding-30px {
+    padding: 30px;
+}
+
+.padding-top-20px{
+    padding-top: 20px
+}
+
+.padding-bottom-20px{
+    padding-bottom: 20px
+}
+
+.padding-bottom-6px {
+    padding-bottom: 6px;
+}
+
+.padding-horizontal-6px {
+    padding: 0 6px;
+}
+
+/* Responsive rules CSS  */
+
+@media (max-width:800px){
+    .responsive-signup-text{
+    display: block;
+    }
+
+    .navbar-container {
+    display: none;
+    }
+}
+
+@media (max-width:400px){
+    .width-380px {
+        width: 90%;
+        min-width: 380px;
+    }
+}
