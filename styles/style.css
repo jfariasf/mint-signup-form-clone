@@ -4,13 +4,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid #000;
+
+    /* border: 1px solid #000; */
 }
 
 * li {
     list-style-type: none;
 }
 
+fieldset{
+    border: 0;
+}
 html {
     font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -19,10 +23,7 @@ html {
     background: #eceef1;
 }
  
-footer a {
-    color: #333;
-    text-decoration: none;
-  } 
+
 
   /* Debug */
 
@@ -111,6 +112,12 @@ footer a {
     background-image: url("/images/ecosystem_logos_new.png");
 }
 
+/* Containers */
+
+.input-container{
+    position: relative;
+}
+
 /* Padding rules */
 
 .vpadding-20px{
@@ -170,6 +177,32 @@ footer a {
     font-size: 1.125em
 }
 
+.submit-buttom{
+    width: 100%;
+    height: 44px;
+    font-size: 1.3em;
+
+}
+
+/* Font size */
+
+.font-2em{
+    font-size: 2em;
+}
+.font-1-16em{
+    font-size: 1.16em;
+}
+.font-0-83em{
+    font-size: 0.83em;
+}
+.font-1rem{
+    font-size: 1rem;
+}
+
+.font-italic{
+    font-style: italic;
+}
+
 /* Height values */
 
 .height-34{
@@ -204,7 +237,51 @@ footer a {
     padding-bottom: 6px;
 }
 
-.padding-horizontal-6px {
+
+.padding-16px{
+    padding: 16px;
+}
+
+/* Icon rules */
+
+.field-icon{
+    position: absolute;
+    right: 1px;
+    height: 32px;
+    top: 1px;
+    bottom: 1px;
+}
+
+/* Margin rules */
+
+.form-footer-margin{
+    margin: 32px -30px -30px;
+}
+
+/* Background color */
+.white-color{
+    background-color: #fff;
+}
+
+
+/* Tag direct defining */
+
+.bottom-footer a{
+    color: #333;
+    text-decoration: none;
+  } 
+
+footer li{
+    display: inline;
+}
+form label{
+    font-size: 1.16em;
+    line-height: 25px;
+}
+form input{
+    height: 34px;
+    width: 100%;
+    min-width: 160px;
     padding: 0 6px;
 }
 
