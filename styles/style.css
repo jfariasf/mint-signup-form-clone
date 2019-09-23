@@ -8,6 +8,11 @@
     /* border: 1px solid #000; */
 }
 
+/* No placeholder */
+input::placeholder {
+    color: transparent;
+    }
+
 * li {
     list-style-type: none;
 }
@@ -33,7 +38,7 @@ html {
 } */
 
 .main-container {
-    
+    border:1px solid #c7c7c7
 }
 
 /* Navbar section */
@@ -119,10 +124,34 @@ html {
     position: relative;
 }
 
+.on-focus {
+    display: none;
+    z-index: 1;
+}
+
+.popup {
+    position: absolute;
+    left: 330px;
+    bottom: 4px;
+    background: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.input-popup:hover ~ .on-focus{
+    display: block;
+}
+
 /* Padding rules */
 
 .vpadding-20px{
     padding: 20px 0;
+}
+
+.padding-bottom40px {
+    padding-bottom: 40px
 }
 
  /* Margin rules */
@@ -207,6 +236,20 @@ html {
     font-style: italic;
 }
 
+.weight300{
+    font-weight: 300;
+}
+
+.weight400{
+    font-weight: 400;
+}
+
+/* Font colors  */
+
+.color-grey{
+    color: #757575
+}
+
 /* Height values */
 
 .height-34{
@@ -272,6 +315,10 @@ html {
     background-color: #fff;
 }
 
+.grey-color{
+    background-color: #ECEEF1;
+}
+
 
 /* Tag direct defining */
 
@@ -295,6 +342,39 @@ form input{
     border: 1px solid #C1C5C8;
 }
 
+/* Animations */
+
+.intro {
+    opacity: 0;
+}
+
+.animation {
+    animation: 1s fade-in ease-in forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro-slide {
+    left: 100px;
+    opacity: 0;
+}
+
+.slide-animation {
+    animation: 1s slide-left ease-in forwards;
+}
+
+@keyframes slide-left {
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
 /* Responsive rules CSS  */
 
 @media (max-width:800px){
@@ -302,7 +382,15 @@ form input{
     display: block;
     }
 
+    input::placeholder {
+    color: grey;
+    }
+
     .navbar-container {
+    display: none;
+    }
+
+    .input-popup:hover ~ .on-focus{
     display: none;
     }
 }

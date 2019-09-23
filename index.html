@@ -8,7 +8,7 @@
     <title>Mint Signup Form</title>
 </head>
 <body>
-    <section class="main-container ">
+    <section class="">
         <!-- navbar section -->
         <nav class="navbar-container">
             <div class="justify-right ">
@@ -31,7 +31,7 @@
 
         <!-- Company logo header  -->
         <header class="vpadding-20px">
-            <div class="logo-container margin-hcenter">
+            <div class="logo-container margin-hcenter animation intro">
                 <a class="logo-anchor" href="#"></a>
             </div>
         </header>
@@ -41,28 +41,28 @@
             <!-- Branding header  -->
             <header>
                 <ul class="margin-hcenter width-fit-content display-flex margin-vbottom-15px">
-                    <li class="logo-mint"></li>
+                    <li class="logo-mint slide-animation intro-slide"></li>
                     <li class="wordmark-mint"></li>
                     <li class="logo-quickbooks"></li>
                     <li class="wordmark-quickbooks"></li>
                     <li class="logo-turbotax"></li>
-                    <li class="wordmark-turbotax"></li>
+                    <li class="wordmark-turbotax slide-animation intro-slide"></li>
                 </ul>
             </header>
 
             <!-- form container -->
-            <section class="width-380px margin-hcenter padding-30px white-color">
+            <section class="width-380px margin-hcenter padding-30px white-color main-container">
 
                 <!-- form header -->
                 <header class="display-flex-column text-align-center padding-bottom-20px">
                     <span class="font-2em">
                         Create an Intuit account
                     </span>
-                    <span class="padding-top-20px font-1-16em">
+                    <span class="padding-top-20px font-1-16em weight300">
                         One account for everything Intuit, including Mint.<br/>
                         <a class="font-1rem" href="">Learn more</a>
                     </span>
-                    <div class="responsive-signup-text font-1-16em">
+                    <div class="responsive-signup-text font-1-16em weight300">
                         Already have an Intuit account? <a href="#">Sign in</a>
                     </div>
                 </header>
@@ -82,19 +82,19 @@
                                             <label class="padding-bottom-6px" for="">
                                                 Email address
                                             </label>
-                                            <div>
-                                                <input type="" name="" id="">
+                                            <div class="input-popup">
+                                                <input type="" name="" id="" placeholder="You'll verify this later">
                                             </div>
                                             <!-- pop up message when focus  -->
-                                            <span>
-                                                <div>
+                                            <span class="input-container on-focus">
+                                                <div class="popup">
                                                     You'll use this as your user ID
                                                 </div>
                                             </span>
                                         </fieldset>
 
                                         <!-- Phone input  -->
-                                        <fieldset>
+                                        <fieldset class="margin-vbottom-30px">
                                             <label for="">
                                                 Phone
                                                 <span>
@@ -102,9 +102,14 @@
                                                 </span>
                                             </label>
                                             <div >
-                                                <input type="" name="" id="">
+                                                <input class="input-popup" type="" name="" id="" placeholder="Helps with lost passwords and security">
                                                 <span class="font-0-83em">
                                                     Standard call, messaging or data rates may apply.
+                                                </span>
+                                                <span class="input-container on-focus">
+                                                    <div class="popup" >
+                                                        We strongly recommend adding a phone number. This will help verify your account and keep it safe.
+                                                    </div>
                                                 </span>
                                             </div>
                                             <!-- pop up message when focus  -->
@@ -114,15 +119,15 @@
                                         </fieldset>
 
                                         <!-- Password input  -->
-                                        <fieldset>
+                                        <fieldset class="margin-vbottom-30px">
                                             <label for="">
                                                 Password
                                             </label>
                                             <div class="input-container">
-                                                <input type="" name="" id="">
+                                                <input class="input-popup" type="" name="" id="" placeholder="Don't reuse an old password">
                                                 <span class="field-icon password-lock-img">  </span>
-                                                <span>
-                                                    <div>
+                                                <span class="input-container on-focus">
+                                                    <div class="popup" >
                                                         Create a password you've never used before. This will help keep your account safe
                                                     </div>
                                                 </span>
@@ -144,7 +149,7 @@
                                         </div>
                                     </form>
 
-                                    <footer class="text-align-center font-italic">
+                                    <footer class="text-align-center font-italic color-grey">
                                         <span >
                                             By clicking Create account, you agree to our<br/>
                                             <a href="">Terms</a> and have read and acknowledge our <a href="">Privacy <br />
@@ -153,7 +158,7 @@
                                     </footer>
                                 </section>
 
-                                <section class="text-align-center padding-16px font-0-83em form-footer-margin">
+                                <section class="text-align-center padding-16px font-0-83em form-footer-margin grey-color">
                                     <span>
                                         Invisible ReCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>
                                     </span>
