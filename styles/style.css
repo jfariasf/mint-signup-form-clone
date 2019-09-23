@@ -168,6 +168,13 @@ html {
      margin-bottom: 30px;
  }
 
+ .margin-bottom-2pxn{
+    margin-bottom: -2px;
+ }
+ .margin-bottom-1pxn{
+    margin-bottom: -1px;
+ }
+
  /* Flex rules  */
 
  .display-flex {
@@ -299,6 +306,15 @@ html {
     bottom: 1px;
 }
 
+.lock-icon{
+    background-image: url('/images/whitelock.png');
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .password-lock-img{
     background: url(/images/lock.png) 0 50%/21px 21px no-repeat;
     width: 33px;
@@ -319,6 +335,11 @@ html {
     background-color: #ECEEF1;
 }
 
+/* Position rules */
+
+    .position-relative{
+        position: relative;
+    }
 
 /* Tag direct defining */
 
@@ -349,8 +370,8 @@ form input{
 }
 
 .animation {
-    animation: 1s fade-in ease-in forwards;
-    animation-delay: 1s;
+    animation: 1s fade-in cubic-bezier(0.7, 0, 0, 1) forwards;
+    animation-delay: 0.7s;
 }
 
 @keyframes fade-in {
@@ -362,16 +383,37 @@ form input{
 .intro-slide {
     left: 100px;
     opacity: 0;
+    position: relative;
 }
 
 .slide-animation {
-    animation: 1s slide-left ease-in forwards;
+    animation: 1s slide-left cubic-bezier(0.7, 0, 0, 1) forwards;
+    animation-delay: 0.7s;
 }
+
 
 @keyframes slide-left {
     100% {
         left: 0;
         opacity: 1;
+    }
+}
+
+.popup-animation{
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: -12px; */
+    margin: auto;
+    animation: 1s pop-up ease-in-out forwards;
+}
+
+@keyframes pop-up{
+    0%, 100% {
+        transform: scale(1,1);
+    }
+    20% {
+        transform: scale(2,2);
     }
 }
 
