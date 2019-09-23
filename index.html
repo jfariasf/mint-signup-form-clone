@@ -77,41 +77,42 @@
                             <div>
                                 <section>
 
-                                    <form class="" action="">
+                                    <form action="#">
                                         <!-- email input  -->
                                         <fieldset class="margin-vbottom-30px">
-                                            <label class="padding-bottom-6px" for="">
+                                            <label class="padding-bottom-6px">
                                                 Email address
                                             </label>
                                             <div class="input-popup">
-                                                <input type="" name="" id="" placeholder="You'll verify this later">
+                                                <input type="email" placeholder="You'll verify this later" required>
                                             </div>
                                             <!-- pop up message when focus  -->
-                                            <span class="input-container on-focus">
+                                            <div class="input-container on-focus">
                                                 <div class="popup">
                                                     You'll use this as your user ID
                                                 </div>
-                                            </span>
+                                            </div>
                                         </fieldset>
 
                                         <!-- Phone input  -->
                                         <fieldset class="margin-vbottom-30px">
-                                            <label for="">
+                                            <label>
                                                 Phone
                                                 <span>
                                                     (recommended)
                                                 </span>
                                             </label>
                                             <div >
-                                                <input class="input-popup" type="" name="" id="" placeholder="Helps with lost passwords and security">
+                                                <input class="input-popup" type="tel" placeholder="Helps with lost passwords and security" maxlength="10"
+                                                 required>
                                                 <span class="font-0-83em">
                                                     Standard call, messaging or data rates may apply.
                                                 </span>
-                                                <span class="input-container on-focus">
+                                                <div class="input-container on-focus">
                                                     <div class="popup" >
                                                         We strongly recommend adding a phone number. This will help verify your account and keep it safe.
                                                     </div>
-                                                </span>
+                                                </div>
                                             </div>
                                             <!-- pop up message when focus  -->
                                             <span>
@@ -121,17 +122,17 @@
 
                                         <!-- Password input  -->
                                         <fieldset class="margin-vbottom-30px">
-                                            <label for="">
+                                            <label>
                                                 Password
                                             </label>
                                             <div class="input-container">
-                                                <input class="input-popup" type="" name="" id="" placeholder="Don't reuse an old password">
+                                                <input class="input-popup" type="password" placeholder="Don't reuse an old password" required>
                                                 <span class="field-icon password-lock-img">  </span>
-                                                <span class="input-container on-focus">
+                                                <div class="input-container on-focus">
                                                     <div class="popup" >
                                                         Create a password you've never used before. This will help keep your account safe
                                                     </div>
-                                                </span>
+                                                </div>
                                             </div>
                                             <!-- pop up message when focus  -->
                                             <span></span>
