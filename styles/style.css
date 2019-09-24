@@ -54,7 +54,7 @@ html {
 .logo-container {
     width: 118px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 .logo-mint {
@@ -62,7 +62,7 @@ html {
     background-position-y: 35px;
     width: 31px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 .wordmark-mint {
@@ -70,7 +70,7 @@ html {
     background-position-y: 35px;
     width: 40px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 .logo-quickbooks {
@@ -78,7 +78,7 @@ html {
     background-position-y: 35px;
     width: 31px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 .wordmark-quickbooks {
@@ -86,7 +86,7 @@ html {
     background-position-y: 35px;
     width: 106px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 .logo-turbotax {
@@ -94,7 +94,7 @@ html {
     background-position-y: 35px;
     width: 25px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 .wordmark-turbotax {
@@ -102,7 +102,7 @@ html {
     background-position-y: 35px;
     width: 80px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 /* Containers */
@@ -298,7 +298,7 @@ html {
 }
 
 .lock-icon {
-    background-image: url('/images/whitelock.png');
+    background-image: url("../images/whitelock.png");
     height: 14px;
     width: 14px;
     display: inline-block;
@@ -307,7 +307,7 @@ html {
 }
 
 .password-lock-img {
-    background: url(/images/lock.png) 0 50%/21px 21px no-repeat;
+    background: url("../images/lock.png") 0 50%/21px 21px no-repeat;
     width: 33px;
 }
 
