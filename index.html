@@ -74,101 +74,97 @@
                     <!-- form inputs -->
                     <div>
                         <div>
-                            <div>
-                                <section>
+                            <section>
 
-                                    <form action="#">
-                                        <!-- email input  -->
-                                        <fieldset class="margin-vbottom-30px">
-                                            <label class="padding-bottom-6px">
-                                                Email address
-                                            </label>
-                                            <div class="input-popup">
-                                                <input type="email" placeholder="You'll verify this later" required>
-                                            </div>
-                                            <!-- pop up message when focus  -->
-                                            <div class="input-container on-focus">
-                                                <div class="popup">
-                                                    You'll use this as your user ID
-                                                </div>
-                                            </div>
-                                        </fieldset>
-
-                                        <!-- Phone input  -->
-                                        <fieldset class="margin-vbottom-30px">
-                                            <label>
-                                                Phone
-                                                <span>
-                                                    (recommended)
-                                                </span>
-                                            </label>
-                                            <div >
-                                                <input class="input-popup" type="tel" placeholder="Helps with lost passwords and security" maxlength="10"
-                                                 required>
-                                                <span class="font-0-83em">
-                                                    Standard call, messaging or data rates may apply.
-                                                </span>
-                                                <div class="input-container on-focus">
-                                                    <div class="popup" >
-                                                        We strongly recommend adding a phone number. This will help verify your account and keep it safe.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- pop up message when focus  -->
-                                            <span>
-
-                                            </span>
-                                        </fieldset>
-
-                                        <!-- Password input  -->
-                                        <fieldset class="margin-vbottom-30px">
-                                            <label>
-                                                Password
-                                            </label>
-                                            <div class="input-container">
-                                                <input class="input-popup" type="password" placeholder="Don't reuse an old password" required>
-                                                <span class="field-icon password-lock-img">  </span>
-                                                <div class="input-container on-focus">
-                                                    <div class="popup" >
-                                                        Create a password you've never used before. This will help keep your account safe
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- pop up message when focus  -->
-                                            <span></span>
-                                        </fieldset>
-                                        
-                                        <!-- Create account  -->
-                                        <div class="submit-container">
-                                            <button class="submit-buttom buttom-style">
-                                                <span class="lock-icon margin-bottom-1pxn">
-                                                    
-                                                </span>
-                                                <span>
-                                                    Create Account
-                                                </span>
-                                            </button>
+                                <form action="#">
+                                    <!-- email input  -->
+                                    <fieldset class="margin-vbottom-30px">
+                                        <label class="padding-bottom-6px" for="email" >
+                                            Email address
+                                        </label>
+                                        <div class="input-popup">
+                                            <input id="email" type="email" placeholder="You'll verify this later" required>
                                         </div>
-                                    </form>
+                                        <!-- pop up message when focus  -->
+                                        <div class="input-container on-focus">
+                                            <div class="popup">
+                                                You'll use this as your user ID
+                                            </div>
+                                        </div>
+                                    </fieldset>
 
-                                    <footer class="text-align-center font-italic color-grey">
-                                        <span >
-                                            By clicking Create account, you agree to our<br/>
-                                            <a href="">Terms</a> and have read and acknowledge our <a href="">Privacy <br />
-                                            Statement</a>
+                                    <!-- Phone input  -->
+                                    <fieldset class="margin-vbottom-30px">
+                                        <label for="phone">
+                                            Phone
+                                            <span>
+                                                (recommended)
+                                            </span>
+                                        </label>
+                                        <div >
+                                            <input id="phone" class="input-popup" type="tel" placeholder="Helps with lost passwords and security" maxlength="10"
+                                                required>
+                                            <span class="font-0-83em">
+                                                Standard call, messaging or data rates may apply.
+                                            </span>
+                                            <div class="input-container on-focus">
+                                                <div class="popup" >
+                                                    We strongly recommend adding a phone number. This will help verify your account and keep it safe.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- pop up message when focus  -->
+                                        <span>
+
                                         </span>
-                                    </footer>
-                                </section>
+                                    </fieldset>
 
-                                <section class="text-align-center padding-16px font-0-83em form-footer-margin grey-color">
-                                    <span>
-                                        Invisible ReCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>
+                                    <!-- Password input  -->
+                                    <fieldset class="margin-vbottom-30px">
+                                        <label for="password">
+                                            Password
+                                        </label>
+                                        <div class="input-container">
+                                            <input id="password" class="input-popup" type="password" placeholder="Don't reuse an old password" required>
+                                            <span class="field-icon password-lock-img">  </span>
+                                            <div class="input-container on-focus">
+                                                <div class="popup" >
+                                                    Create a password you've never used before. This will help keep your account safe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- pop up message when focus  -->
+                                        <span></span>
+                                    </fieldset>
+                                    
+                                    <!-- Create account  -->
+                                    <div class="submit-container">
+                                        <button class="submit-buttom buttom-style">
+                                            <span class="lock-icon margin-bottom-1pxn">
+                                                
+                                            </span>
+                                            <span>
+                                                Create Account
+                                            </span>
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <footer class="text-align-center font-italic color-grey">
+                                    <span >
+                                        By clicking Create account, you agree to our<br/>
+                                        <a href="">Terms</a> and have read and acknowledge our <a href="">Privacy <br />
+                                        Statement</a>
                                     </span>
-                                </section>
-                            </div>
+                                </footer>
+                            </section>
 
+                            <section class="text-align-center padding-16px font-0-83em form-footer-margin grey-color">
+                                <span>
+                                    Invisible ReCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>
+                                </span>
+                            </section>
                         </div>
-                        
                     </div>
 
                     <!-- legal and company information  -->
