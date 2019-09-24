@@ -8,31 +8,30 @@
     /* border: 1px solid #000; */
 }
 
+/* No placeholder */
+input::placeholder {
+    color: transparent;
+}
+
 * li {
     list-style-type: none;
 }
 
-fieldset{
+fieldset {
     border: 0;
 }
 html {
-    font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
     background: #eceef1;
+    color: #404040;
 }
  
 
-
-  /* Debug */
-
-/* .debug{
-    border: 1px solid #000;
-} */
-
 .main-container {
-    
+    border: 1px solid #c7c7c7;
 }
 
 /* Navbar section */
@@ -43,123 +42,150 @@ html {
     display: block;
 }
 
-.buttom-container{
-    margin-left: 10px
+.buttom-container {
+    margin-left: 10px;
 }
 
-.responsive-signup-text{
+.responsive-signup-text {
     display: none;
 }
 
 /* Header Logo */
-.logo-container{
+.logo-container {
     width: 118px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
-.logo-anchor{
-
-}
-
-
-
-.logo-mint{
+.logo-mint {
     background-position-x: -250px;
     background-position-y: 35px;
     width: 31px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
-.wordmark-mint{
+.wordmark-mint {
     background-position-x: -280px;
     background-position-y: 35px;
     width: 40px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
-.logo-quickbooks{
+.logo-quickbooks {
     background-position-x: -110px;
     background-position-y: 35px;
     width: 31px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
-.wordmark-quickbooks{
+.wordmark-quickbooks {
     background-position-x: -140px;
     background-position-y: 35px;
     width: 106px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
-.logo-turbotax{
-    background-position-x: 0px;
+.logo-turbotax {
+    background-position-x: 0;
     background-position-y: 35px;
     width: 25px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
-.wordmark-turbotax{
+.wordmark-turbotax {
     background-position-x: -25px;
     background-position-y: 35px;
     width: 80px;
     height: 35px;
-    background-image: url("/images/ecosystem_logos_new.png");
+    background-image: url("../images/ecosystem_logos_new.png");
 }
 
 /* Containers */
 
-.input-container{
+.input-container {
     position: relative;
+}
+
+.on-focus {
+    display: none;
+    z-index: 1;
+}
+
+.popup {
+    position: absolute;
+    left: 330px;
+    bottom: 4px;
+    background: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.input-popup:hover ~ .on-focus {
+    display: block;
 }
 
 /* Padding rules */
 
-.vpadding-20px{
+.vpadding-20px {
     padding: 20px 0;
+}
+
+.padding-bottom40px {
+    padding-bottom: 40px;
 }
 
  /* Margin rules */
 
- .margin-hcenter{
-     margin: 0 auto;
- }
+.margin-hcenter {
+    margin: 0 auto;
+}
 
- .margin-vbottom-15px{
-     margin-bottom: 15px;
- }
+.margin-vbottom-15px {
+    margin-bottom: 15px;
+}
 
- .margin-vbottom-30px{
-     margin-bottom: 30px;
- }
+.margin-vbottom-30px {
+    margin-bottom: 30px;
+}
 
- /* Flex rules  */
+.margin-bottom-2pxn {
+    margin-bottom: -2px;
+}
 
- .display-flex {
-     display: flex;
- }
+.margin-bottom-1pxn {
+    margin-bottom: -1px;
+}
 
- .display-flex-column {
-     display: flex;
-     flex-direction: column;
- }
+/* Flex rules */
+
+.display-flex {
+    display: flex;
+}
+
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Justify CSS */
 
-.text-align-center{
-    text-align:center; 
+.text-align-center {
+    text-align: center;
 }
 
-.justify-right{
+.justify-right {
     display: flex;
     justify-content: flex-end;
 }
-.justify-center{
+
+.justify-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,49 +193,69 @@ html {
 
 /* Elements rules */
 
-.buttom-style{
-    background: #0077C5;
+.buttom-style {
+    background: #0077c5;
     border-radius: 4px;
     border: 1px solid #4c4c4c;
     color: #ffff;
     cursor: pointer;
     padding: 0 20px;
-    font-size: 1.125em
+    font-size: 1.125em;
 }
 
-.submit-buttom{
+.submit-buttom {
     width: 100%;
     height: 44px;
     font-size: 1.3em;
+}
 
+.submit-container {
+    padding-bottom: 30px;
 }
 
 /* Font size */
 
-.font-2em{
+.font-2em {
     font-size: 2em;
 }
-.font-1-16em{
+
+.font-1-16em {
     font-size: 1.16em;
 }
-.font-0-83em{
+
+.font-0-83em {
     font-size: 0.83em;
 }
-.font-1rem{
+
+.font-1rem {
     font-size: 1rem;
 }
 
-.font-italic{
+.font-italic {
     font-style: italic;
+}
+
+.weight300 {
+    font-weight: 300;
+}
+
+.weight400 {
+    font-weight: 400;
+}
+
+/* Font colors    */
+
+.color-grey {
+    color: #757575;
 }
 
 /* Height values */
 
-.height-34{
+.height-34 {
     height: 34px;
 }
 
-/* width rules  */
+/* width rules    */
 
 .width-fit-content {
     width: fit-content;
@@ -225,26 +271,25 @@ html {
     padding: 30px;
 }
 
-.padding-top-20px{
-    padding-top: 20px
+.padding-top-20px {
+    padding-top: 20px;
 }
 
-.padding-bottom-20px{
-    padding-bottom: 20px
+.padding-bottom-20px {
+    padding-bottom: 20px;
 }
 
 .padding-bottom-6px {
     padding-bottom: 6px;
 }
 
-
-.padding-16px{
+.padding-16px {
     padding: 16px;
 }
 
 /* Icon rules */
 
-.field-icon{
+.field-icon {
     position: absolute;
     right: 1px;
     height: 32px;
@@ -252,52 +297,140 @@ html {
     bottom: 1px;
 }
 
+.lock-icon {
+    background-image: url("../images/whitelock.png");
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.password-lock-img {
+    background: url("../images/lock.png") 0 50%/21px 21px no-repeat;
+    width: 33px;
+}
+
 /* Margin rules */
 
-.form-footer-margin{
+.form-footer-margin {
     margin: 32px -30px -30px;
 }
 
 /* Background color */
-.white-color{
+.white-color {
     background-color: #fff;
 }
 
+.grey-color {
+    background-color: #eceef1;
+}
+
+/* Position rules */
+
+.position-relative {
+    position: relative;
+}
 
 /* Tag direct defining */
 
-.bottom-footer a{
+.bottom-footer a {
     color: #333;
     text-decoration: none;
-  } 
+}
 
-footer li{
+footer li {
     display: inline;
 }
-form label{
+
+form label {
     font-size: 1.16em;
     line-height: 25px;
 }
-form input{
+
+form input {
     height: 34px;
     width: 100%;
     min-width: 160px;
     padding: 0 6px;
+    border: 1px solid #c1c5c8;
 }
 
-/* Responsive rules CSS  */
+/* Animations */
 
-@media (max-width:800px){
-    .responsive-signup-text{
-    display: block;
+.intro {
+    opacity: 0;
+}
+
+.animation {
+    animation: 1s fade-in cubic-bezier(0.7, 0, 0, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro-slide {
+    left: 100px;
+    opacity: 0;
+    position: relative;
+}
+
+.slide-animation {
+    animation: 1s slide-left cubic-bezier(0.7, 0, 0, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slide-left {
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.popup-animation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: 1s pop-up ease-in-out forwards;
+}
+
+@keyframes pop-up {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    20% {
+        transform: scale(2, 2);
+    }
+}
+
+/* Responsive rules CSS    */
+
+@media (max-width: 800px) {
+    .responsive-signup-text {
+        display: block;
+    }
+
+    input::placeholder {
+        color: grey;
     }
 
     .navbar-container {
-    display: none;
+        display: none;
+    }
+
+    .input-popup:hover ~ .on-focus {
+        display: none;
     }
 }
 
-@media (max-width:400px){
+@media (max-width: 400px) {
     .width-380px {
         width: 90%;
         min-width: 380px;
